@@ -13,7 +13,7 @@ std::vector<std::vector<T>> combinations (const std::vector<T>& v, int k)
 {
     std::vector<std::vector<T>> results;
 
-    if (v.size() > 1<<sizeof(unsigned long long)-1)
+    if (v.size() > 1<<(sizeof(unsigned long long)-1))
     {
         std::cerr << "too large" << std::endl;
         return results;
